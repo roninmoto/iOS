@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BaseComputer.h"
+#import "ComputerFactory.h"
+#import "DellComputer.h"
+#import "HPComputer.h"
+#import "ASUSComputer.h"
+
 
 @interface ViewController : UIViewController
+
+{
+    UILabel *DellLabel;
+    UILabel *HPLabel;
+    UILabel *ASUSLabel;
+}
 
 @end
