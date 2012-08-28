@@ -16,6 +16,30 @@
 
 - (void)viewDidLoad
 {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    //Labels for classes
+    
+    //Dell Label
+    DellLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, 320, 55)];
+    DellLabel.textAlignment = UITextAlignmentCenter;
+    DellLabel.numberOfLines = 2;
+    [self.view addSubview:DellLabel];
+    
+    //HP Label
+    HPLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 55)];
+    HPLabel.textAlignment = UITextAlignmentCenter;
+    HPLabel.numberOfLines = 2;
+    [self.view addSubview:HPLabel];
+    
+    //ASUS Label
+    ASUSLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 320, 55)];
+    ASUSLabel.textAlignment = UITextAlignmentCenter;
+    ASUSLabel.numberOfLines = 2;
+    [self.view addSubview:ASUSLabel];
+    
+    
+    
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
 }
