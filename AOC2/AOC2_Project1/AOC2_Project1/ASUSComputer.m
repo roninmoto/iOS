@@ -10,4 +10,19 @@
 
 @implementation ASUSComputer
 
+-(id)init
+
+{
+    if (self = [super init]) {
+        
+        classType = @"ASUS";
+        CPUType = @"Intel i7 SixCore";
+        CPU_Speed = 4;
+        HD_Size = 3;
+        
+    }
+    return self;
+}
+
+
 @end

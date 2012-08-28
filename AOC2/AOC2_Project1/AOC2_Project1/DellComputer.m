@@ -10,4 +10,19 @@
 
 @implementation DellComputer
 
+-(id)init
+
+{
+    if (self = [super init]) {
+        
+        classType = @"Dell";
+        CPUType = @"Intel i3 QuadCore";
+        CPU_Speed = 3;
+        HD_Size = 1;
+        
+    }
+    return self;
+}
+
+
 @end

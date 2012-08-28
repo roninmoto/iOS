@@ -10,4 +10,20 @@
 
 @implementation HPComputer
 
+
+-(id)init
+
+{
+    if (self = [super init]) {
+        
+        classType = @"HP";
+        CPUType = @"AMD QuadCore";
+        CPU_Speed = 2;
+        HD_Size = 2;
+        
+    }
+    return self;
+}
+
+
 @end
