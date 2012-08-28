@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseComputer.h"
 
-@interface DellComputer : NSObject
+//Interface has to pull from base class not nsobject
+@interface DellComputer : BaseComputer
 
 @end
