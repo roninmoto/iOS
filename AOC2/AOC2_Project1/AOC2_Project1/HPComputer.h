@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseComputer.h"
 
-@interface HPComputer : NSObject
+@interface HPComputer : BaseComputer
 
 @end

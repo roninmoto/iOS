@@ -10,4 +10,11 @@
 
 @interface BaseComputer : NSObject
 
+{
+@protected
+    NSString *classType;
+    NSString *CPUType;
+    int CPU_Speed;
+    int HD_Size;    
+}
 @end

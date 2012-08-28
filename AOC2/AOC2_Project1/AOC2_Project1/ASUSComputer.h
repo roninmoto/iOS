@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseComputer.h"
 
-@interface ASUSComputer : NSObject
+@interface ASUSComputer : BaseComputer
 
 @end
