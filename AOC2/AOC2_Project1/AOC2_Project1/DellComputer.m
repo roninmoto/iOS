@@ -20,6 +20,7 @@
         CPUType = @"Intel i3 QuadCore";
         CPU_Speed = 3;
         HD_Size = 1;
+        cost = 700;
         
     }
     return self;

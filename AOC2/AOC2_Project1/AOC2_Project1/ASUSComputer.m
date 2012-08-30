@@ -20,7 +20,7 @@
         CPUType = @"Intel i7 SixCore";
         CPU_Speed = 4;
         HD_Size = 3;
-        
+        cost = 800;
     }
     return self;
 };
