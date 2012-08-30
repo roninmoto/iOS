@@ -56,10 +56,10 @@
 }
 
 
-//multipler takes cpu_speed and HD_size muliples them and then muliples sum by 200 to get cost
+//multipler takes cpu_speed and cost muliples them and then muliples sum by 100 to get cost
 -(int)getCost
 {
-    cost = (int) (CPU_Speed * HD_Size) * 200;
+    cost = (int) (cost * CPU_Speed) * 100;
     NSLog(@"The cost of this machine is %i", cost);
     return cost;
 }
