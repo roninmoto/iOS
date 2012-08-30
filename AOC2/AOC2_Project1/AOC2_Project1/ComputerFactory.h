@@ -14,5 +14,7 @@
 
 
 @interface ComputerFactory : NSObject
+
+//static factory output
 +(BaseComputer*)OEMFactory : (NSInteger)BaseComputerName;
 @end

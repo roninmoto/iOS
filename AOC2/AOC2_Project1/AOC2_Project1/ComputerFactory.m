@@ -14,18 +14,22 @@
 
 +(BaseComputer*)OEMFactory:(NSInteger)BaseComputerName
 {
+    // 1st if is hit, will send dell subclass
     if (BaseComputerName == 0) {
         
         return [[DellComputer alloc]init];
-        
+     
+    //2nd if hit, will send HP subclass
     }else if (BaseComputerName == 1){
         
         return [[HPComputer alloc]init];
         
+    //3rd if hit, will send ASUS subclass
     }else if (BaseComputerName == 2){
         
         return [[ASUSComputer alloc]init];
     }
+    //returns nil, then I screwed up 
     return nil;
     
 };
