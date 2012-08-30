@@ -19,8 +19,8 @@
         classType = @"ASUS";
         CPUType = @"Intel i7 SixCore";
         CPU_Speed = 4;
-        HD_Size = 3;
-        cost = 800;
+        HD_Size = 20;
+        cost = 3;
     }
     return self;
 };

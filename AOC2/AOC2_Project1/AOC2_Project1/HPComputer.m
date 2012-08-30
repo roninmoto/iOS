@@ -21,7 +21,7 @@
         CPUType = @"AMD QuadCore";
         CPU_Speed = 2;
         HD_Size = 2;
-        cost = 600;
+        cost = 2;
         
     }
     return self;
