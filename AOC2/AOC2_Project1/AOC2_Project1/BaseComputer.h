@@ -15,13 +15,15 @@ typedef enum {
 
 @interface BaseComputer : NSObject
 
+
 {
 @protected
     myOEM count;
     NSString *classType;
     NSString *CPUType;
     int CPU_Speed;
-    int HD_Size;    
+    int HD_Size;
+    int cost;
 }
 
 
