@@ -30,6 +30,7 @@ typedef enum {
 -(NSString*)getClassType;
 -(NSString*)getCPUType;
 -(int)getCPU_Speed;
+-(int)getCost;
 -(void)setHDSize:(int)newHDSize;
 
 @end
