@@ -74,23 +74,53 @@
     //First accessor label which connects to subclass dell
     DellComputer *dell = (DellComputer*) [ComputerFactory OEMFactory:0];
     [dell setHDSize:1];
-    DellLabel.text = [NSString stringWithFormat:@"I am a %@ computer,with an %@ processor running at %iGhz costing around $%i",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost]];
+    DellLabel.text = [NSString stringWithFormat:@"I am a %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost]];
     
     
     //Second accessor label, change OEMFactory to 2 to pull from correct subclass
     HPComputer *HP = (HPComputer*) [ComputerFactory OEMFactory:1];
     [HP setHDSize:1];
-    HPLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost]];
+    HPLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost]];
     
     
     //Third accessor and changed OEMFactory for third subclass
     ASUSComputer *ASUS = (ASUSComputer*) [ComputerFactory OEMFactory:2];
     [ASUS setHDSize:1];
-    ASUSLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost]];
+    ASUSLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost]];
     
+    //three static labels
+    //DellLabelTwo
     
+    int bluRay = 199;
+    if (bluRay > 100)
+    {
+        DellLabelTwo.text = [NSString stringWithFormat:@"The cost to install Bluray is $%i.00 on a %@. It is too much so we will install a DVD player instead.", bluRay, [dell getClassType]];
+    }
+    else
+    {
+        DellLabelTwo.text = [NSString stringWithFormat:@"The cost of Bluray is $%i.00 on a %@ and is cheap enough to add to the system.", bluRay, [dell getClassType]];
+    }
     
+    //HPLabelTwo
+    BOOL solidState = false;
+    if (solidState == false)
+    {
+        HPLabelTwo.text = [NSString stringWithFormat:@"This %@ computer is equiped with a SSD Drive.", [HP getClassType]];
+    }
+    else
+    {
+        HPLabelTwo.text = [NSString stringWithFormat:@"This %@ computer has a SATA drive.", [HP getClassType]];
+    }
     
+    BOOL fourStar = true;
+    if (fourStar == true)
+    {
+        ASUSLabelTwo.text = [NSString stringWithFormat:@"%@ with an %@ processor is a Four Star Computer, Rated #1!", [ASUS getClassType], [ASUS getCPUType]];
+    }
+    else
+    {
+        ASUSLabelTwo.text = [NSString stringWithFormat:@"%@ with a dual core processor is not a four star computer.",[ASUS getClassType]];
+    }
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
