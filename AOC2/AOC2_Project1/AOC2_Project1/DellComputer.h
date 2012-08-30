@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 #import "BaseComputer.h"
 
-//Interface has to pull from base class not nsobject
 @interface DellComputer : BaseComputer
 
 @end
