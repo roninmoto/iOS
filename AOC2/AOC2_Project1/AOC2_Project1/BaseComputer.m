@@ -6,6 +6,10 @@
 //  Copyright (c) 2012 Joel Betterly. All rights reserved.
 //
 
+//this class is not declared anywhere in my viewcontoller.m file
+// Factory will complete all output
+
+
 #import "BaseComputer.h"
 
 @implementation BaseComputer
@@ -29,6 +33,8 @@
     HD_Size = newHDSize;
 }
 
+//string types
+
 -(NSString*)getClassType
 {
     NSLog(@"I am a %@ name brand computer.", classType);
@@ -41,12 +47,16 @@
     return CPUType;
 }
 
+//int types
+
 -(int)getCPU_Speed
 {
     NSLog(@"I run at this speed:%i Ghz",CPU_Speed);
     return CPU_Speed;
 }
 
+
+//multipler takes cpu_speed and HD_size muliples them and then muliples sum by 200 to get cost
 -(int)getCost
 {
     cost = (int) (CPU_Speed * HD_Size) * 200;

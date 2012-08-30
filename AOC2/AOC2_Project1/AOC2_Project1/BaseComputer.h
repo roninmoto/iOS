@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+
+//make my type definitions so the factory can pull correct data from correct subclass
 typedef enum {
     OEM_Dell = 0,
     OEM_HP,
@@ -26,6 +28,7 @@ typedef enum {
     int cost;
 }
 
+//setters and getters
 
 -(NSString*)getClassType;
 -(NSString*)getCPUType;
