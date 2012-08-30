@@ -15,6 +15,7 @@
 {
     if (self = [super init]) {
         
+        count = 2;
         classType = @"ASUS";
         CPUType = @"Intel i7 SixCore";
         CPU_Speed = 4;

@@ -16,6 +16,7 @@
 {
     if (self = [super init]) {
         
+        count = 1;
         classType = @"HP";
         CPUType = @"AMD QuadCore";
         CPU_Speed = 2;

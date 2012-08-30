@@ -15,6 +15,7 @@
 {
     if (self = [super init]) {
         
+        count = 0;
         classType = @"Dell";
         CPUType = @"Intel i3 QuadCore";
         CPU_Speed = 3;
