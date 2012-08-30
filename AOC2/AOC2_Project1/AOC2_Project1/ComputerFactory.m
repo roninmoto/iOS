@@ -10,4 +10,22 @@
 
 @implementation ComputerFactory
 
++(BaseComputer*)OEMFactory:(NSInteger)BaseComputerName
+{
+    if (BaseComputerName == 0) {
+        
+        return [[DellComputer alloc]init];
+        
+    }else if (BaseComputerName == 1){
+        
+        return [[HPComputer alloc]init];
+        
+    }else if (BaseComputerName == 2){
+        
+        return [[ASUSComputer alloc]init];
+    }
+    return nil;
+    
+};
+
 @end

@@ -14,5 +14,5 @@
 
 
 @interface ComputerFactory : NSObject
-
++(BaseComputer*)OEMFactory : (NSInteger)BaseComputerName;
 @end
