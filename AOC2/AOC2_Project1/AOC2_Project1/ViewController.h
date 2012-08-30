@@ -19,6 +19,9 @@
     UILabel *DellLabel;
     UILabel *HPLabel;
     UILabel *ASUSLabel;
+    UILabel *DellLabelTwo;
+    UILabel *HPLabelTwo;
+    UILabel *ASUSLabelTwo;
 }
 
 @end
