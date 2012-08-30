@@ -44,12 +44,22 @@
     ASUSLabel.numberOfLines = 3;
     [self.view addSubview:ASUSLabel];
     
+    //First accessor label which connects to subclass dell
     DellComputer *dell = (DellComputer*) [ComputerFactory OEMFactory:0];
     [dell setHDSize:1];
     DellLabel.text = [NSString stringWithFormat:@"I am a %@ computer,with an %@ processor running at %iGhz costing around $%i",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost]];
     
     
+    //Second accessor label, change OEMFactory to 2 to pull from correct subclass
+    HPComputer *HP = (HPComputer*) [ComputerFactory OEMFactory:1];
+    [HP setHDSize:1];
+    HPLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost]];
     
+    
+    //Third accessor and changed OEMFactory for third subclass
+    ASUSComputer *ASUS = (ASUSComputer*) [ComputerFactory OEMFactory:2];
+    [ASUS setHDSize:1];
+    ASUSLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost]];
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
