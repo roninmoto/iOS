@@ -22,7 +22,7 @@
         
     }
     return self;
-}
+};
 
 
 @end
