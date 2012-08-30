@@ -7,6 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "BaseComputer.h"
+#import "DellComputer.h"
+#import "HPComputer.h"
+#import "ASUSComputer.h"
+
 
 @interface ComputerFactory : NSObject
 
