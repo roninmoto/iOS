@@ -10,6 +10,8 @@
 
 @implementation ComputerFactory
 
+//Static factory to determine computer type
+
 +(BaseComputer*)OEMFactory:(NSInteger)BaseComputerName
 {
     if (BaseComputerName == 0) {
