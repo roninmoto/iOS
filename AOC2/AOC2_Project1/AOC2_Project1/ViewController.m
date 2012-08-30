@@ -22,18 +22,21 @@
     
     //Dell Label
     DellLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 5, 320, 55)];
+    DellLabel.backgroundColor = [UIColor lightGrayColor];
     DellLabel.textAlignment = UITextAlignmentCenter;
     DellLabel.numberOfLines = 2;
     [self.view addSubview:DellLabel];
     
     //HP Label
-    HPLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 50, 320, 55)];
+    HPLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 65, 320, 55)];
+    HPLabel.backgroundColor = [UIColor lightGrayColor];
     HPLabel.textAlignment = UITextAlignmentCenter;
     HPLabel.numberOfLines = 2;
     [self.view addSubview:HPLabel];
     
     //ASUS Label
-    ASUSLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 100, 320, 55)];
+    ASUSLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 125, 320, 55)];
+    ASUSLabel.backgroundColor = [UIColor lightGrayColor];
     ASUSLabel.textAlignment = UITextAlignmentCenter;
     ASUSLabel.numberOfLines = 2;
     [self.view addSubview:ASUSLabel];
