@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    IBOutlet UITextField *display;
+    IBOutlet UISwitch *onOff;
+    IBOutlet UILabel *label;
+    
+}
+
+-(IBAction)stateOfSwitch:(id)sender;
 
 @end

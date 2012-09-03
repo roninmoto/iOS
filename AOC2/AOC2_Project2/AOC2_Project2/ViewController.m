@@ -14,10 +14,27 @@
 
 @implementation ViewController
 
+
+//If switch is On or Off
+-(IBAction)stateOfSwitch:(id)sender
+{
+    if (onOff.on) {
+        label.text = @"Calculator On";
+    }
+    else
+    {
+        label.text = @"Calculator Off";
+    }
+}
+
 - (void)viewDidLoad
 {
     //Set Background Color
     self.view.backgroundColor = [UIColor blueColor];
+    
+    display.text = @"0";
+
+
     
     
     [super viewDidLoad];
