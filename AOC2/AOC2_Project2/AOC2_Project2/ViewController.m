@@ -27,15 +27,20 @@
     }
 }
 
+-(IBAction)buttonNumberPressed:(id)sender
+{
+    if (onOff != false)
+    {
+        displayNumber = displayNumber*10 + (float)[sender tag];
+        display.text = [NSString stringWithFormat:@"%2.0f",displayNumber];
+    }
+}
+
 - (void)viewDidLoad
 {
     //Set Background Color
     self.view.backgroundColor = [UIColor blueColor];
-    
-    display.text = @"0";
 
-
-    
     
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
