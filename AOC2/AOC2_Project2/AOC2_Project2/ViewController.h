@@ -11,11 +11,12 @@
 @interface ViewController : UIViewController
 {
     IBOutlet UITextField *display;
+    double displayNumber;
     IBOutlet UISwitch *onOff;
     IBOutlet UILabel *label;
     
 }
 
 -(IBAction)stateOfSwitch:(id)sender;
-
+-(IBAction)buttonNumberPressed:(id)sender;
 @end
