@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+
+//IBOutlets for each field
 {
     IBOutlet UITextField *display;
     double displayNumber;
@@ -17,6 +19,17 @@
     
 }
 
+//setting upp enumeration for change of background colors
+typedef enum
+{
+    white_color=0,
+    blue_color,
+    green_color,
+    
+}backgroundColor;
+
+//IBActions for switches, buttons, info, and clearing
 -(IBAction)stateOfSwitch:(id)sender;
 -(IBAction)buttonNumberPressed:(id)sender;
+-(IBAction)changeBackground:(id)sender;
 @end
