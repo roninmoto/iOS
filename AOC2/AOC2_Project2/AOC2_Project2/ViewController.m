@@ -24,8 +24,10 @@
     else
     {
         label.text = @"Calculator Off";
+        display.text = @"";
     }
 }
+
 
 -(IBAction)buttonNumberPressed:(id)sender
 {
@@ -36,10 +38,34 @@
     }
 }
 
+//Wendy's video UISegmentControl movie, look around 2:30 in video.  Copied from there.
+
+-(IBAction)changeBackground:(id)sender
+{
+    UISegmentedControl *segmentControl = (UISegmentedControl*)sender;
+    if (segmentControl !=nil)
+    {
+        int selectedSegmentIndex = segmentControl.selectedSegmentIndex;
+        if (selectedSegmentIndex == white_color)
+        {
+            self.view.backgroundColor = [UIColor whiteColor];
+        }
+        else if (selectedSegmentIndex == blue_color)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        }
+        else if (selectedSegmentIndex == green_color)
+        {
+            self.view.backgroundColor = [UIColor greenColor];
+        }
+            
+    }
+}
+
 - (void)viewDidLoad
 {
     //Set Background Color
-    self.view.backgroundColor = [UIColor blueColor];
+   self.view.backgroundColor = [UIColor whiteColor];
 
     
     [super viewDidLoad];
