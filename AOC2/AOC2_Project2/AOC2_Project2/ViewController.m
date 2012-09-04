@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "SecondViewController.h"
+
 
 @interface ViewController ()
 
@@ -35,6 +37,11 @@
     {
         displayNumber = displayNumber*10 + (float)[sender tag];
         display.text = [NSString stringWithFormat:@"%2.0f",displayNumber];
+    }
+    else
+    {
+
+
     }
 }
 

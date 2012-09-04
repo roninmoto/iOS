@@ -32,4 +32,5 @@ typedef enum
 -(IBAction)stateOfSwitch:(id)sender;
 -(IBAction)buttonNumberPressed:(id)sender;
 -(IBAction)changeBackground:(id)sender;
+
 @end
