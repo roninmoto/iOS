@@ -10,4 +10,6 @@
 
 @interface SecondViewController : UIViewController
 
+-(IBAction)secondViewExit:(id)sender;
+
 @end

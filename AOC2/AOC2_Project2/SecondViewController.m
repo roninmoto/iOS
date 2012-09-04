@@ -41,4 +41,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+-(IBAction)secondViewExit:(id)sender;
+{
+    [self dismissModalViewControllerAnimated:TRUE];
+}
 @end
