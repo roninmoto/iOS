@@ -26,6 +26,7 @@ typedef enum {
     int CPU_Speed;
     int HD_Size;
     int cost;
+    int software;
 }
 
 //setters and getters
@@ -34,6 +35,8 @@ typedef enum {
 -(NSString*)getCPUType;
 -(int)getCPU_Speed;
 -(int)getCost;
+-(int)getSoftware;
 -(void)setHDSize:(int)newHDSize;
+-(void)setCost:(int)newCost;
 
 @end

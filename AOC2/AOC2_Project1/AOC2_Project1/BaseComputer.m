@@ -24,6 +24,7 @@
         CPU_Speed = 0;
         HD_Size = 0;
         cost = 0;
+        software = 0;
     }
     return self;
 };
@@ -31,6 +32,11 @@
 -(void)setHDSize:(int)newHDSize
 {
     HD_Size = newHDSize;
+}
+
+-(void)setCost:(int)newCost
+{
+    cost = newCost;
 }
 
 //string types
@@ -62,5 +68,12 @@
     cost = (int) (cost * CPU_Speed) * 100;
     NSLog(@"The cost of this machine is %i", cost);
     return cost;
+}
+
+-(int)getSoftware
+{
+    software = (int) (HD_Size * CPU_Speed) * 30;
+    NSLog(@"cost of software is %i",software);
+    return software;
 }
 @end
