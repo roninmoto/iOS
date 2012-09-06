@@ -73,20 +73,26 @@
     
     //First accessor label which connects to subclass dell
     DellComputer *dell = (DellComputer*) [ComputerFactory OEMFactory:0];
-    [dell setHDSize:1];
-    DellLabel.text = [NSString stringWithFormat:@"I am a %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost]];
+    [dell setHDSize:2];
+    [dell setCost:5];
+    
+    DellLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00.",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost],[dell getSoftware]];
     
     
     //Second accessor label, change OEMFactory to 2 to pull from correct subclass
     HPComputer *HP = (HPComputer*) [ComputerFactory OEMFactory:1];
-    [HP setHDSize:1];
-    HPLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost]];
+    [HP setHDSize:4];
+    [HP setCost:3];
+    
+    HPLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00.",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost],[HP getSoftware]];
     
     
     //Third accessor and changed OEMFactory for third subclass
     ASUSComputer *ASUS = (ASUSComputer*) [ComputerFactory OEMFactory:2];
-    [ASUS setHDSize:1];
-    ASUSLabel.text = [NSString stringWithFormat:@"I am an %@ computer,with an %@ processor running at %iGhz costing around $%i.00",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost]];
+    [ASUS setHDSize:3];
+    [ASUS setCost:5];
+    
+    ASUSLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost],[ASUS getSoftware]];
     
     //three static labels
     //DellLabelTwo
