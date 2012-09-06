@@ -37,16 +37,16 @@
     [self.view addSubview:HPLabel];
     
     //ASUS Label
-    ASUSLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 147, 320, 70)];
+    ASUSLabel = [[UILabel alloc] initWithFrame:CGRectMake(0, 147, 320, 80)];
     ASUSLabel.backgroundColor = [UIColor lightGrayColor];
     ASUSLabel.textColor = [UIColor blackColor];
     ASUSLabel.textAlignment = UITextAlignmentCenter;
-    ASUSLabel.numberOfLines = 3;
+    ASUSLabel.numberOfLines = 4;
     [self.view addSubview:ASUSLabel];
     
     //Adding second set of UILabels for each subclass
     //dell label two
-    DellLabelTwo = [[UILabel alloc] initWithFrame:CGRectMake(0, 220, 320, 70)];
+    DellLabelTwo = [[UILabel alloc] initWithFrame:CGRectMake(0, 230, 320, 70)];
     DellLabelTwo.backgroundColor = [UIColor blueColor];
     DellLabelTwo.textColor = [UIColor whiteColor];
     DellLabelTwo.textAlignment = UITextAlignmentCenter;
@@ -54,7 +54,7 @@
     [self.view addSubview:DellLabelTwo];
     
     //hp label two
-    HPLabelTwo = [[UILabel alloc] initWithFrame:CGRectMake(0, 293, 320, 70)];
+    HPLabelTwo = [[UILabel alloc] initWithFrame:CGRectMake(0, 303, 320, 70)];
     HPLabelTwo.backgroundColor = [UIColor blueColor];
     HPLabelTwo.textColor = [UIColor whiteColor];
     HPLabelTwo.textAlignment = UITextAlignmentCenter;
@@ -62,7 +62,7 @@
     [self.view addSubview:HPLabelTwo];
     
     //ASUS label two
-    ASUSLabelTwo =[[UILabel alloc] initWithFrame:CGRectMake(0, 367, 320, 70)];
+    ASUSLabelTwo =[[UILabel alloc] initWithFrame:CGRectMake(0, 377, 320, 70)];
     ASUSLabelTwo.backgroundColor = [UIColor blueColor];
     ASUSLabelTwo.textColor = [UIColor whiteColor];
     ASUSLabelTwo.textAlignment = UITextAlignmentCenter;
@@ -75,24 +75,27 @@
     DellComputer *dell = (DellComputer*) [ComputerFactory OEMFactory:0];
     [dell setHDSize:2];
     [dell setCost:5];
+    [dell setKeyboard:6];
     
-    DellLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00.",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost],[dell getSoftware]];
+    DellLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Keyboard is $%i.00",[dell getClassType],[dell getCPUType],[dell getCPU_Speed],[dell getCost],[dell getKeyboard]];
     
     
     //Second accessor label, change OEMFactory to 2 to pull from correct subclass
     HPComputer *HP = (HPComputer*) [ComputerFactory OEMFactory:1];
     [HP setHDSize:4];
     [HP setCost:3];
+    [HP setVideo:99];
     
-    HPLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00.",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost],[HP getSoftware]];
+    HPLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Add-on Video is $%i.00.",[HP getClassType],[HP getCPUType],[HP getCPU_Speed],[HP getCost],[HP getVideo]];
     
     
     //Third accessor and changed OEMFactory for third subclass
     ASUSComputer *ASUS = (ASUSComputer*) [ComputerFactory OEMFactory:2];
     [ASUS setHDSize:3];
     [ASUS setCost:5];
+    [ASUS setcpuCooler:25];
     
-    ASUSLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Software is $%i.00",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost],[ASUS getSoftware]];
+    ASUSLabel.text = [NSString stringWithFormat:@"A %@ computer, with an %@ processor of %iGhz costing around $%i.00. Add-on CPU Cooler $%i.00.",[ASUS getClassType],[ASUS getCPUType],[ASUS getCPU_Speed],[ASUS getCost],[ASUS getcpuCooler]];
     
     //three static labels
     //DellLabelTwo
