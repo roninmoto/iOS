@@ -11,4 +11,14 @@
 
 @interface DellComputer : BaseComputer
 
+{
+@protected
+
+    int keyboard;
+
+}
+
+-(void)setKeyboard:(int)newKeyboard;
+-(int)getKeyboard;
+
 @end
