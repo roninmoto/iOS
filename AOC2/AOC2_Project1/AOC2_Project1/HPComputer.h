@@ -11,4 +11,14 @@
 
 @interface HPComputer : BaseComputer
 
+{
+@protected
+    
+    int video;
+    
+}
+
+-(void)setVideo:(int)newVideo;
+-(int)getVideo;
+
 @end

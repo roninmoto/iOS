@@ -22,10 +22,22 @@
         CPU_Speed = 2;
         HD_Size = 2;
         cost = 2;
+        video = 0;
         
     }
     return self;
 };
 
+-(void)setVideo:(int)newVideo
+{
+    video = newVideo;
+}
+
+-(int)getVideo
+{
+    video = (int) (count * video);
+    NSLog(@"cost of add-on video card is %i.", video);
+    return video;
+}
 
 @end
