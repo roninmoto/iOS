@@ -15,15 +15,28 @@
 {
     if (self = [super init]) {
         
-        count = 2;
+        count = 6;
         classType = @"ASUS";
         CPUType = @"Intel i7 SixCore";
         CPU_Speed = 4;
         HD_Size = 2;
         cost = 3;
+        cpuCooler = 0;
     }
     return self;
 };
+
+-(void)setcpuCooler:(int)newCPU_Cooler
+{
+    cpuCooler = newCPU_Cooler;
+}
+
+-(int)getcpuCooler
+{
+    cpuCooler = (int) (count * cpuCooler);
+    NSLog(@"cost of CPU Cooler is %i.", cpuCooler);
+    return cpuCooler;
+}
 
 
 @end

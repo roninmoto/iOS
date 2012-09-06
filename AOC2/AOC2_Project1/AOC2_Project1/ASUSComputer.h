@@ -11,4 +11,14 @@
 
 @interface ASUSComputer : BaseComputer
 
+{
+@protected
+    
+    int cpuCooler;
+    
+}
+
+-(void)setcpuCooler:(int)newCPU_Cooler;
+-(int)getcpuCooler;
+
 @end
