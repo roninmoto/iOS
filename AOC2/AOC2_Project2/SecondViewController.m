@@ -41,6 +41,8 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+//This will dismiss the second view and close it.
+
 -(IBAction)secondViewExit:(id)sender;
 {
     [self dismissModalViewControllerAnimated:TRUE];
