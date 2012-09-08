@@ -16,6 +16,9 @@
 		1F4C587D15F5015300A41C9F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C587C15F5015300A41C9F /* ViewController.m */; };
 		1F4C588015F5015300A41C9F /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C587E15F5015300A41C9F /* ViewController_iPhone.xib */; };
 		1F4C588315F5015300A41C9F /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C588115F5015300A41C9F /* ViewController_iPad.xib */; };
+		1F4C589515F6829800A41C9F /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F4C589315F6829800A41C9F /* SecondViewController.m */; };
+		1F4C589615F6829800A41C9F /* SecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C589415F6829800A41C9F /* SecondViewController.xib */; };
+		1F4C58A615FBE1E100A41C9F /* crazyfrogsmall.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1F4C58A515FBE1E100A41C9F /* crazyfrogsmall.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +36,10 @@
 		1F4C587C15F5015300A41C9F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1F4C587F15F5015300A41C9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		1F4C588215F5015300A41C9F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		1F4C589215F6829800A41C9F /* SecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SecondViewController.h; path = ../SecondViewController.h; sourceTree = "<group>"; };
+		1F4C589315F6829800A41C9F /* SecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SecondViewController.m; path = ../SecondViewController.m; sourceTree = "<group>"; };
+		1F4C589415F6829800A41C9F /* SecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SecondViewController.xib; path = ../SecondViewController.xib; sourceTree = "<group>"; };
+		1F4C58A515FBE1E100A41C9F /* crazyfrogsmall.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crazyfrogsmall.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +86,12 @@
 		1F4C586F15F5015300A41C9F /* AOC2_Project2 */ = {
 			isa = PBXGroup;
 			children = (
-				1F4C587815F5015300A41C9F /* AppDelegate.h */,
+				1F4C58A515FBE1E100A41C9F /* crazyfrogsmall.jpg */,
+				1F4C589215F6829800A41C9F /* SecondViewController.h */,
+				1F4C589315F6829800A41C9F /* SecondViewController.m */,
+				1F4C589415F6829800A41C9F /* SecondViewController.xib */,
 				1F4C587915F5015300A41C9F /* AppDelegate.m */,
+				1F4C587815F5015300A41C9F /* AppDelegate.h */,
 				1F4C587B15F5015300A41C9F /* ViewController.h */,
 				1F4C587C15F5015300A41C9F /* ViewController.m */,
 				1F4C587E15F5015300A41C9F /* ViewController_iPhone.xib */,
@@ -155,6 +166,8 @@
 				1F4C587415F5015300A41C9F /* InfoPlist.strings in Resources */,
 				1F4C588015F5015300A41C9F /* ViewController_iPhone.xib in Resources */,
 				1F4C588315F5015300A41C9F /* ViewController_iPad.xib in Resources */,
+				1F4C589615F6829800A41C9F /* SecondViewController.xib in Resources */,
+				1F4C58A615FBE1E100A41C9F /* crazyfrogsmall.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +181,7 @@
 				1F4C587615F5015300A41C9F /* main.m in Sources */,
 				1F4C587A15F5015300A41C9F /* AppDelegate.m in Sources */,
 				1F4C587D15F5015300A41C9F /* ViewController.m in Sources */,
+				1F4C589515F6829800A41C9F /* SecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +305,7 @@
 				1F4C588815F5015300A41C9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
