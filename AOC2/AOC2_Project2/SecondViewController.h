@@ -10,6 +10,7 @@
 
 @interface SecondViewController : UIViewController
 
+//This is the action to call when the close button is clicked.
 -(IBAction)secondViewExit:(id)sender;
 
 @end
