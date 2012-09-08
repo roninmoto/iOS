@@ -12,7 +12,10 @@
 
 //IBOutlets for each field
 {
+    
+    double operatorResults;
     IBOutlet UITextField *display;
+    int operator;
     double displayNumber;
     IBOutlet UISwitch *onOff;
     IBOutlet UILabel *label;
@@ -32,5 +35,7 @@ typedef enum
 -(IBAction)stateOfSwitch:(id)sender;
 -(IBAction)buttonNumberPressed:(id)sender;
 -(IBAction)changeBackground:(id)sender;
+-(IBAction)clickOperator:(id)sender;
+-(IBAction)clearButton:(id)sender;
 
 @end
