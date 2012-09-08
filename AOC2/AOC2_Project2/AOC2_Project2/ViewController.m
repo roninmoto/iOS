@@ -62,8 +62,7 @@
 }
 
 
-//clear function to resart at zero
-
+//clear function to resart at zero 
 -(IBAction)clearButton:(id)sender
 {
     displayNumber = 0;
@@ -71,7 +70,7 @@
     operator = 0;
 }
 
-//Wendy's video UISegmentControl movie, look around 2:30 in video.  Copied from there.
+//Wendy's video UISegmentControl movie, look around 2:30 in video.  She gives full step-by-step instruction.
 
 -(IBAction)changeBackground:(id)sender
 {
@@ -95,6 +94,15 @@
     }
 }
 
+//Show second view controller window (Wendy's video, she is so awesome.)
+-(IBAction)infoButton:(id)sender
+{
+    SecondViewController *viewTwo =[[SecondViewController alloc] initWithNibName:@"SecondViewController" bundle:nil];
+    if (viewTwo !=nil)
+    {
+        [self presentModalViewController:viewTwo animated:TRUE];
+    }
+}
 
 
 - (void)viewDidLoad

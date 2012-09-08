@@ -22,7 +22,7 @@
     
 }
 
-//setting upp enumeration for change of background colors
+//setting up enumeration for change of background colors
 typedef enum
 {
     white_color=0,
@@ -37,5 +37,6 @@ typedef enum
 -(IBAction)changeBackground:(id)sender;
 -(IBAction)clickOperator:(id)sender;
 -(IBAction)clearButton:(id)sender;
+-(IBAction)infoButton:(id)sender;
 
 @end
