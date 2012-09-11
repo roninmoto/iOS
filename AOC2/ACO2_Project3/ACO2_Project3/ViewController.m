@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "PickerViewController.h"
 @interface ViewController ()
 
 @end
@@ -24,7 +24,7 @@
     }
 }
 
--(void)SetEvent:(NSString *)currentEventStrg
+-(void)setEvent:(NSString *)currentEventStrg
 {
     currentEvents.text = [currentEvents.text stringByAppendingString:currentEventStrg];
 }
