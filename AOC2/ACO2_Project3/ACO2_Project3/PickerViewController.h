@@ -8,22 +8,25 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol EventInfo <NSObject>
+@protocol PassEventInfo <NSObject>
 
 @required
+
+-(void)setEvent:(NSString*)currentEventStrg;
+
 
 @end
 
 @interface PickerViewController : UIViewController
 {
     IBOutlet UITextField *textFieldTwo;
-    id <EventInfo> delegate;
+    id <PassEventInfo> delegate;
     IBOutlet UIDatePicker *pickDate;
     NSString *info;
-    NSString *newEvent;
+    NSString *addEvent;
 }
 
-@property (strong) id<EventInfo> delegate;
+@property (strong) id<PassEventInfo> delegate;
 @property (nonatomic, retain)IBOutlet UIDatePicker *pickDate;
 
 -(IBAction)saveEvent:(id)sender;

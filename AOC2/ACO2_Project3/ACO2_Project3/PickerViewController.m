@@ -13,19 +13,29 @@
 @end
 
 @implementation PickerViewController
+@synthesize delegate, pickDate;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        delegate = nil;
     }
     return self;
+}
+
+-(IBAction)closeKeyboard:(id)sender
+{
+    [textFieldTwo resignFirstResponder];
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    pickDate.minimumDate = [NSDate date];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -34,6 +44,35 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+
+-(BOOL)textFieldShouldBeginEditing:(UITextField *)currentEventTextField
+{
+    currentEventTextField.text = [NSString stringWithString:@""];
+    return YES;
+}
+
+-(IBAction)saveEvent:(id)sender
+{
+    pickDate.minimumDate = [NSDate date];
+    NSDate *picked = [pickDate date];
+    if (picked !=nil)
+    {
+        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+        if (dateFormat !=nil)
+        {
+            [dateFormat setDateFormat:@"MMMM dd, h:mm a"];
+        }
+        info = [dateFormat stringFromDate:picked];
+        NSLog(@"%@", info);
+    }
+    
+    [self dismissModalViewControllerAnimated:TRUE];
+    if (delegate !=nil)
+    {
+        addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
+        [delegate setEvent:addEvent];
+    }
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
