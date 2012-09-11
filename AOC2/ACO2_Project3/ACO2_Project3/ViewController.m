@@ -14,6 +14,16 @@
 
 @implementation ViewController
 
+-(IBAction)addEvent:(id)sender
+{
+    PickerViewController *CurrentEvents = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:nil];
+    if (CurrentEvents !=nil)
+    {
+        CurrentEvents.delegate = self;
+        [self presentModalViewController:CurrentEvents animated:TRUE];
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
