@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PickerViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <EventInfo>
+{
+    IBOutlet UITextField *currentEvents;
+}
+
+-(IBAction)addEvent:(id)sender;
+
 
 @end
