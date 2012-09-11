@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "PickerViewController.h"
 
-@interface ViewController : UIViewController <EventInfo>
+@interface ViewController : UIViewController
+<PassEventInfo>
+
 {
     IBOutlet UITextField *currentEvents;
 }
