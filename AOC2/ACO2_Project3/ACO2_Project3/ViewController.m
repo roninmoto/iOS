@@ -24,6 +24,11 @@
     }
 }
 
+-(void)SetEvent:(NSString *)currentEventStrg
+{
+    currentEvents.text = [currentEvents.text stringByAppendingString:currentEventStrg];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
