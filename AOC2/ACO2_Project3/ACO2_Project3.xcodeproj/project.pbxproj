@@ -16,6 +16,12 @@
 		1FEE955815FF8A5D000FD9CA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE955715FF8A5D000FD9CA /* ViewController.m */; };
 		1FEE955B15FF8A5D000FD9CA /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE955915FF8A5D000FD9CA /* ViewController_iPhone.xib */; };
 		1FEE955E15FF8A5D000FD9CA /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE955C15FF8A5D000FD9CA /* ViewController_iPad.xib */; };
+		1FEE956715FF8E44000FD9CA /* PickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE956515FF8E44000FD9CA /* PickerViewController.m */; };
+		1FEE956815FF8E44000FD9CA /* PickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE956615FF8E44000FD9CA /* PickerViewController.xib */; };
+		1FEE957A1600E888000FD9CA /* back.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE95791600E888000FD9CA /* back.jpg */; };
+		1FEE957F1600F02E000FD9CA /* addevent.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE957E1600F02E000FD9CA /* addevent.png */; };
+		1FEE95871600F993000FD9CA /* closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE95861600F993000FD9CA /* closed.png */; };
+		1FEE95891600F9ED000FD9CA /* save2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEE95881600F9ED000FD9CA /* save2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +39,13 @@
 		1FEE955715FF8A5D000FD9CA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1FEE955A15FF8A5D000FD9CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		1FEE955D15FF8A5D000FD9CA /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		1FEE956415FF8E44000FD9CA /* PickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PickerViewController.h; sourceTree = "<group>"; };
+		1FEE956515FF8E44000FD9CA /* PickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PickerViewController.m; sourceTree = "<group>"; };
+		1FEE956615FF8E44000FD9CA /* PickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PickerViewController.xib; sourceTree = "<group>"; };
+		1FEE95791600E888000FD9CA /* back.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = back.jpg; sourceTree = "<group>"; };
+		1FEE957E1600F02E000FD9CA /* addevent.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addevent.png; sourceTree = "<group>"; };
+		1FEE95861600F993000FD9CA /* closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = closed.png; sourceTree = "<group>"; };
+		1FEE95881600F9ED000FD9CA /* save2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = save2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +92,10 @@
 		1FEE954A15FF8A5D000FD9CA /* ACO2_Project3 */ = {
 			isa = PBXGroup;
 			children = (
+				1FEE95881600F9ED000FD9CA /* save2.png */,
+				1FEE95861600F993000FD9CA /* closed.png */,
+				1FEE957E1600F02E000FD9CA /* addevent.png */,
+				1FEE95791600E888000FD9CA /* back.jpg */,
 				1FEE955315FF8A5D000FD9CA /* AppDelegate.h */,
 				1FEE955415FF8A5D000FD9CA /* AppDelegate.m */,
 				1FEE955615FF8A5D000FD9CA /* ViewController.h */,
@@ -86,6 +103,9 @@
 				1FEE955915FF8A5D000FD9CA /* ViewController_iPhone.xib */,
 				1FEE955C15FF8A5D000FD9CA /* ViewController_iPad.xib */,
 				1FEE954B15FF8A5D000FD9CA /* Supporting Files */,
+				1FEE956415FF8E44000FD9CA /* PickerViewController.h */,
+				1FEE956515FF8E44000FD9CA /* PickerViewController.m */,
+				1FEE956615FF8E44000FD9CA /* PickerViewController.xib */,
 			);
 			path = ACO2_Project3;
 			sourceTree = "<group>";
@@ -155,6 +175,11 @@
 				1FEE954F15FF8A5D000FD9CA /* InfoPlist.strings in Resources */,
 				1FEE955B15FF8A5D000FD9CA /* ViewController_iPhone.xib in Resources */,
 				1FEE955E15FF8A5D000FD9CA /* ViewController_iPad.xib in Resources */,
+				1FEE956815FF8E44000FD9CA /* PickerViewController.xib in Resources */,
+				1FEE957A1600E888000FD9CA /* back.jpg in Resources */,
+				1FEE957F1600F02E000FD9CA /* addevent.png in Resources */,
+				1FEE95871600F993000FD9CA /* closed.png in Resources */,
+				1FEE95891600F9ED000FD9CA /* save2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -168,6 +193,7 @@
 				1FEE955115FF8A5D000FD9CA /* main.m in Sources */,
 				1FEE955515FF8A5D000FD9CA /* AppDelegate.m in Sources */,
 				1FEE955815FF8A5D000FD9CA /* ViewController.m in Sources */,
+				1FEE956715FF8E44000FD9CA /* PickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +317,7 @@
 				1FEE956315FF8A5D000FD9CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
