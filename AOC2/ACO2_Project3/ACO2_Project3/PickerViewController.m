@@ -46,9 +46,9 @@
     // e.g. self.myOutlet = nil;
 }
 
--(BOOL)textFieldShouldBeginEditing:(UITextField *)currentEventTextField
+-(BOOL)textEditing:(UITextField *)currentEventTextField
 {
-    currentEventTextField.text = [NSString stringWithString:@""];
+    currentEventTextField.text = @"";
     return YES;
 }
 
@@ -61,6 +61,7 @@
         NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
         if (dateFormat !=nil)
         {
+            //format for your date
             [dateFormat setDateFormat:@"MMMM dd, h:mm a"];
         }
         info = [dateFormat stringFromDate:picked];
@@ -69,7 +70,8 @@
     
     [self dismissModalViewControllerAnimated:TRUE];
     if (delegate !=nil)
-    {
+        
+    {   //This is the format to display the text in the uitextview
         addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
         [delegate setEvent:addEvent];
     }
