@@ -13,7 +13,8 @@
 <PassEventInfo>
 
 {
-    IBOutlet UITextField *currentEvents;
+    //Make sure this is a UITextView and not UITextField...Mistake will cost you a couple of hours and some head banging.
+    IBOutlet UITextView *currentEvents;
 }
 
 -(IBAction)addEvent:(id)sender;
