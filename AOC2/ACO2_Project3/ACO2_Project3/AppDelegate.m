@@ -12,6 +12,7 @@
 
 @implementation AppDelegate
 
+//IN new version of iOS Xcode 4.4.1 and above, you really do not need to add the follwoing two lines, but it won't hurt either.
 @synthesize window = _window;
 @synthesize viewController = _viewController;
 
