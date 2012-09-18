@@ -30,6 +30,7 @@
     [textFieldTwo resignFirstResponder];
 }
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -52,6 +53,8 @@
     return YES;
 }
 
+
+
 -(IBAction)saveEvent:(id)sender
 {
     pickDate.minimumDate = [NSDate date];
@@ -67,14 +70,25 @@
         info = [dateFormat stringFromDate:picked];
         NSLog(@"%@", info);
     }
-    
-    [self dismissModalViewControllerAnimated:TRUE];
-    if (delegate !=nil)
+    if (delegate != nil)
         
     {   //This is the format to display the text in the uitextview
         addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
-        [delegate setEvent:addEvent];
+        
+        if (addEvent.length > 0);
+        {
+            [delegate setEvent:addEvent];
+        }else
+        {
+                UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
+                                                              message:@"entry is blank"
+                                                              delegate:self
+                                                              cancelButtonTitle:@"Okay"
+                                                              otherButtonTitles:nil];
+                [alertView show];
+        }
     }
+    [self dismissModalViewControllerAnimated:TRUE];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
