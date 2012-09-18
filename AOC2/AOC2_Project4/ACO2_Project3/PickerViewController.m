@@ -75,13 +75,17 @@
     {   //This is the format to display the text in the uitextview
         addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
         
-        if (addEvent.length > 0);
+        //checks to see if textfield is empty
+        if (textFieldTwo.text.length > 0)
         {
             [delegate setEvent:addEvent];
+            
+        // brings up an alert that the field is empty and spits them back to home page.
+            //give good error message to user.
         }else
         {
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                                              message:@"entry is blank"
+                                                              message:@"Event was left blank. Please enter data and try again."
                                                               delegate:self
                                                               cancelButtonTitle:@"Okay"
                                                               otherButtonTitles:nil];
