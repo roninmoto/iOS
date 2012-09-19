@@ -32,7 +32,7 @@
 {
     swipeToTheRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goSwipe:)];
     swipeToTheRight.direction = UISwipeGestureRecognizerDirectionRight;
-    [swipeLabel addGestureRecognizer:swipeToTheRight];
+    [swipeLabelRight addGestureRecognizer:swipeToTheRight];
     [super viewWillAppear:animated];
 }
 
