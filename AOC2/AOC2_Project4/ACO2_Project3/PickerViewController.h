@@ -24,12 +24,14 @@
     IBOutlet UIDatePicker *pickDate;
     NSString *info;
     NSString *addEvent;
+    IBOutlet UILabel *swipeLabelLeft;
+    UISwipeGestureRecognizer *swipeToTheLeft;
 }
 
 @property (strong) id<PassEventInfo> delegate;
 @property (nonatomic, retain)IBOutlet UIDatePicker *pickDate;
 
--(IBAction)saveEvent:(id)sender;
+-(void) goSwipeLeft:(UISwipeGestureRecognizer*)recognizer;
 -(IBAction)closeKeyboard:(id)sender;
 
 @end
