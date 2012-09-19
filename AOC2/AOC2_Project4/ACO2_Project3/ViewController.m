@@ -14,14 +14,26 @@
 
 @implementation ViewController
 
--(IBAction)addEvent:(id)sender
+-(void) goSwipe:(UISwipeGestureRecognizer*)recognizer
 {
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionRight)
+    {
+
     PickerViewController *CurrentEvents = [[PickerViewController alloc] initWithNibName:@"PickerViewController" bundle:nil];
     if (CurrentEvents !=nil)
     {
         CurrentEvents.delegate = self;
         [self presentModalViewController:CurrentEvents animated:TRUE];
     }
+  }
+}
+
+-(void)viewWillAppear:(BOOL)animated
+{
+    swipeToTheRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goSwipe:)];
+    swipeToTheRight.direction = UISwipeGestureRecognizerDirectionRight;
+    [swipeLabel addGestureRecognizer:swipeToTheRight];
+    [super viewWillAppear:animated];
 }
 
 -(void)setEvent:(NSString *)currentEventStrg
