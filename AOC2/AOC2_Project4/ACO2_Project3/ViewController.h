@@ -12,12 +12,15 @@
 @interface ViewController : UIViewController
 <PassEventInfo>
 
+//Textview, slider and save button
 {
-    //Make sure this is a UITextView and not UITextField...Mistake will cost you a couple of hours and some head banging.
     IBOutlet UITextView *currentEvents;
+    IBOutlet UILabel *swipeLabel;
+    UISwipeGestureRecognizer *swipeToTheRight;
+    IBOutlet UIButton *saveEvent;
 }
 
--(IBAction)addEvent:(id)sender;
+-(void) goSwipe:(UISwipeGestureRecognizer*)recognizer;
 
 
 @end
