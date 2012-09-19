@@ -57,7 +57,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 8}, {158, 21}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView" ref="527162857"/>
+						<reference key="NSNextKeyView" ref="880486976"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<bool key="IBUIClipsSubviews">YES</bool>
@@ -73,7 +73,7 @@
 							<int key="NSColorSpace">1</int>
 							<bytes key="NSRGB">MC43NSAwLjcxNzc5MzI2ODUgMC4wNjY4MTk3NTAxNgA</bytes>
 						</object>
-						<object class="NSColor" key="IBUIShadowColor" id="628278432">
+						<object class="NSColor" key="IBUIShadowColor" id="634479713">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MAA</bytes>
 						</object>
@@ -94,7 +94,7 @@
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{20, 56}, {280, 338}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
-						<reference key="NSNextKeyView"/>
+						<reference key="NSNextKeyView" ref="742422773"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -118,10 +118,10 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUILabel" id="774397990">
+					<object class="IBUILabel" id="742422773">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 413}, {320, 47}}</string>
+						<string key="NSFrame">{{0, 409}, {320, 50}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<object class="NSColor" key="IBUIBackgroundColor">
@@ -132,10 +132,10 @@
 						<bool key="IBUIClipsSubviews">YES</bool>
 						<int key="IBUIContentMode">7</int>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-						<string key="IBUIText">Swipe Right (--&gt;) to Add an Event</string>
+						<string key="IBUIText">Swipe Right to Create an Event</string>
 						<reference key="IBUITextColor" ref="450579587"/>
 						<nil key="IBUIHighlightedColor"/>
-						<reference key="IBUIShadowColor" ref="628278432"/>
+						<reference key="IBUIShadowColor" ref="634479713"/>
 						<int key="IBUIBaselineAdjustment">0</int>
 						<float key="IBUIMinimumFontSize">10</float>
 						<int key="IBUITextAlignment">1</int>
@@ -149,11 +149,12 @@
 							<int key="NSfFlags">16</int>
 						</object>
 					</object>
-					<object class="IBUIButton" id="803921377">
+					<object class="IBUIButton" id="880486976">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
 						<string key="NSFrame">{{228, 8}, {72, 37}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
+						<reference key="NSNextKeyView" ref="527162857"/>
 						<string key="NSReuseIdentifierKey">_NS:9</string>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -163,7 +164,7 @@
 						<string key="IBUINormalTitle">Save</string>
 						<reference key="IBUIHighlightedTitleColor" ref="450579587"/>
 						<reference key="IBUINormalTitleColor" ref="450579587"/>
-						<reference key="IBUINormalTitleShadowColor" ref="628278432"/>
+						<reference key="IBUINormalTitleShadowColor" ref="634479713"/>
 						<object class="NSCustomResource" key="IBUINormalBackgroundImage">
 							<string key="NSClassName">NSImage</string>
 							<string key="NSResourceName">save2.png</string>
@@ -223,7 +224,7 @@
 					<object class="IBCocoaTouchOutletConnection" key="connection">
 						<string key="label">swipeLabelRight</string>
 						<reference key="source" ref="372490531"/>
-						<reference key="destination" ref="774397990"/>
+						<reference key="destination" ref="742422773"/>
 					</object>
 					<int key="connectionID">30</int>
 				</object>
@@ -254,8 +255,8 @@
 							<reference ref="149744728"/>
 							<reference ref="803097814"/>
 							<reference ref="527162857"/>
-							<reference ref="803921377"/>
-							<reference ref="774397990"/>
+							<reference ref="880486976"/>
+							<reference ref="742422773"/>
 						</array>
 						<reference key="parent" ref="0"/>
 					</object>
@@ -281,12 +282,12 @@
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">27</int>
-						<reference key="object" ref="774397990"/>
+						<reference key="object" ref="742422773"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
 						<int key="objectID">28</int>
-						<reference key="object" ref="803921377"/>
+						<reference key="object" ref="880486976"/>
 						<reference key="parent" ref="774585933"/>
 					</object>
 				</array>
