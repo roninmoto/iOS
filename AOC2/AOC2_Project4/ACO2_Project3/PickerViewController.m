@@ -31,6 +31,16 @@
 }
 
 
+//adding swipe gesture to return to main screen
+-(void)viewWillAppear:(BOOL)animated
+{
+    swipeToTheLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(goSwipeLeft:)];
+    swipeToTheLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+    [swipeLabelLeft addGestureRecognizer:swipeToTheLeft];
+    
+    [super viewWillAppear:animated];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -55,44 +65,47 @@
 
 
 
--(IBAction)saveEvent:(id)sender
+-(void) goSwipeLeft:(UISwipeGestureRecognizer*)recognizer
 {
-    pickDate.minimumDate = [NSDate date];
-    NSDate *picked = [pickDate date];
-    if (picked !=nil)
+    if (recognizer.direction == UISwipeGestureRecognizerDirectionLeft)
     {
-        NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
-        if (dateFormat !=nil)
+        pickDate.minimumDate = [NSDate date];
+        NSDate *picked = [pickDate date];
+        if (picked !=nil)
         {
-            //format for your date
-            [dateFormat setDateFormat:@"MMMM dd, h:mm a"];
+            NSDateFormatter *dateFormat = [[NSDateFormatter alloc] init];
+            if (dateFormat !=nil)
+            {
+                //format for your date
+                [dateFormat setDateFormat:@"MMMM dd, h:mm a"];
+            }
+            info = [dateFormat stringFromDate:picked];
+            NSLog(@"%@", info);
         }
-        info = [dateFormat stringFromDate:picked];
-        NSLog(@"%@", info);
-    }
-    if (delegate != nil)
+        if (delegate != nil)
         
-    {   //This is the format to display the text in the uitextview
-        addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
-        
-        //checks to see if textfield is empty
-        if (textFieldTwo.text.length > 0)
-        {
-            [delegate setEvent:addEvent];
+        {   //This is the format to display the text in the uitextview
+            addEvent = [NSString stringWithFormat:@"%@ \n%@ \n \n", textFieldTwo.text, info];
             
-        // brings up an alert that the field is empty and spits them back to home page.
-            //give good error message to user.
-        }else
-        {
+            //checks to see if textfield is empty
+            if (textFieldTwo.text.length > 0)
+            {
+                [delegate setEvent:addEvent];
+                
+                // brings up an alert that the field is empty and spits them back to home page.
+                //give good error message to user.
+            }else
+            {
                 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Alert"
-                                                              message:@"Event was left blank. Please enter data and try again."
-                                                              delegate:self
-                                                              cancelButtonTitle:@"Okay"
-                                                              otherButtonTitles:nil];
+                                                            message:@"Event was left blank. Please enter data and try again."
+                                                            delegate:self
+                                                            cancelButtonTitle:@"Okay"
+                                                            otherButtonTitles:nil];
                 [alertView show];
+            }
         }
+     [self dismissModalViewControllerAnimated:TRUE];
     }
-    [self dismissModalViewControllerAnimated:TRUE];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
