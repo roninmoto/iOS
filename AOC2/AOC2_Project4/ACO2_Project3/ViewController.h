@@ -15,7 +15,7 @@
 //Textview, slider and save button
 {
     IBOutlet UITextView *currentEvents;
-    IBOutlet UILabel *swipeLabel;
+    IBOutlet UILabel *swipeLabelRight;
     UISwipeGestureRecognizer *swipeToTheRight;
     IBOutlet UIButton *saveEvent;
 }
