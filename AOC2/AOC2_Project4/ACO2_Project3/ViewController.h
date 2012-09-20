@@ -21,6 +21,7 @@
 }
 
 -(void) goSwipe:(UISwipeGestureRecognizer*)recognizer;
-
+-(IBAction)saveEventToMemory:(id)sender;
+-(IBAction)erase:(id)sender;
 
 @end
