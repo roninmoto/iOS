@@ -21,6 +21,11 @@
 		1F0D1BCF15ED6F13008ABCD6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0D1BAD15ED6F13008ABCD6 /* Foundation.framework */; };
 		1F0D1BD715ED6F13008ABCD6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0D1BD515ED6F13008ABCD6 /* InfoPlist.strings */; };
 		1F0D1BDA15ED6F13008ABCD6 /* AOC2_Project1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BD915ED6F13008ABCD6 /* AOC2_Project1Tests.m */; };
+		1F0D1BE515ED82EA008ABCD6 /* BaseComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BE415ED82EA008ABCD6 /* BaseComputer.m */; };
+		1F0D1BE815ED8317008ABCD6 /* DellComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BE715ED8317008ABCD6 /* DellComputer.m */; };
+		1F0D1BEB15ED832C008ABCD6 /* HPComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BEA15ED832C008ABCD6 /* HPComputer.m */; };
+		1F0D1BEE15ED833A008ABCD6 /* ASUSComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BED15ED833A008ABCD6 /* ASUSComputer.m */; };
+		1F0D1BF115ED834F008ABCD6 /* ComputerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0D1BF015ED834F008ABCD6 /* ComputerFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		1F0D1BD615ED6F13008ABCD6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F0D1BD815ED6F13008ABCD6 /* AOC2_Project1Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOC2_Project1Tests.h; sourceTree = "<group>"; };
 		1F0D1BD915ED6F13008ABCD6 /* AOC2_Project1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOC2_Project1Tests.m; sourceTree = "<group>"; };
+		1F0D1BE315ED82EA008ABCD6 /* BaseComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseComputer.h; sourceTree = "<group>"; };
+		1F0D1BE415ED82EA008ABCD6 /* BaseComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseComputer.m; sourceTree = "<group>"; };
+		1F0D1BE615ED8317008ABCD6 /* DellComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DellComputer.h; sourceTree = "<group>"; };
+		1F0D1BE715ED8317008ABCD6 /* DellComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DellComputer.m; sourceTree = "<group>"; };
+		1F0D1BE915ED832C008ABCD6 /* HPComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HPComputer.h; sourceTree = "<group>"; };
+		1F0D1BEA15ED832C008ABCD6 /* HPComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HPComputer.m; sourceTree = "<group>"; };
+		1F0D1BEC15ED833A008ABCD6 /* ASUSComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASUSComputer.h; sourceTree = "<group>"; };
+		1F0D1BED15ED833A008ABCD6 /* ASUSComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASUSComputer.m; sourceTree = "<group>"; };
+		1F0D1BEF15ED834F008ABCD6 /* ComputerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComputerFactory.h; sourceTree = "<group>"; };
+		1F0D1BF015ED834F008ABCD6 /* ComputerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComputerFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +135,16 @@
 				1F0D1BC315ED6F13008ABCD6 /* ViewController.h */,
 				1F0D1BC415ED6F13008ABCD6 /* ViewController.m */,
 				1F0D1BB215ED6F13008ABCD6 /* Supporting Files */,
+				1F0D1BE315ED82EA008ABCD6 /* BaseComputer.h */,
+				1F0D1BE415ED82EA008ABCD6 /* BaseComputer.m */,
+				1F0D1BE615ED8317008ABCD6 /* DellComputer.h */,
+				1F0D1BE715ED8317008ABCD6 /* DellComputer.m */,
+				1F0D1BE915ED832C008ABCD6 /* HPComputer.h */,
+				1F0D1BEA15ED832C008ABCD6 /* HPComputer.m */,
+				1F0D1BEC15ED833A008ABCD6 /* ASUSComputer.h */,
+				1F0D1BED15ED833A008ABCD6 /* ASUSComputer.m */,
+				1F0D1BEF15ED834F008ABCD6 /* ComputerFactory.h */,
+				1F0D1BF015ED834F008ABCD6 /* ComputerFactory.m */,
 			);
 			path = AOC2_Project1;
 			sourceTree = "<group>";
@@ -265,6 +290,11 @@
 				1F0D1BB815ED6F13008ABCD6 /* main.m in Sources */,
 				1F0D1BBC15ED6F13008ABCD6 /* AppDelegate.m in Sources */,
 				1F0D1BC515ED6F13008ABCD6 /* ViewController.m in Sources */,
+				1F0D1BE515ED82EA008ABCD6 /* BaseComputer.m in Sources */,
+				1F0D1BE815ED8317008ABCD6 /* DellComputer.m in Sources */,
+				1F0D1BEB15ED832C008ABCD6 /* HPComputer.m in Sources */,
+				1F0D1BEE15ED833A008ABCD6 /* ASUSComputer.m in Sources */,
+				1F0D1BF115ED834F008ABCD6 /* ComputerFactory.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +476,7 @@
 				1F0D1BDF15ED6F13008ABCD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F0D1BE015ED6F13008ABCD6 /* Build configuration list for PBXNativeTarget "AOC2_Project1Tests" */ = {
 			isa = XCConfigurationList;
@@ -454,6 +485,7 @@
 				1F0D1BE215ED6F13008ABCD6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
