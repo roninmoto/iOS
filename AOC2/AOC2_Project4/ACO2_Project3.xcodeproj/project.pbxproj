@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FB2CE8F160B8E8E0026BAD0 /* erase.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FB2CE8E160B8E8E0026BAD0 /* erase.png */; };
 		1FEE954515FF8A5D000FD9CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE954415FF8A5D000FD9CA /* UIKit.framework */; };
 		1FEE954715FF8A5D000FD9CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE954615FF8A5D000FD9CA /* Foundation.framework */; };
 		1FEE954915FF8A5D000FD9CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEE954815FF8A5D000FD9CA /* CoreGraphics.framework */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FB2CE8E160B8E8E0026BAD0 /* erase.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erase.png; sourceTree = "<group>"; };
 		1FEE954015FF8A5D000FD9CA /* ACO2_Project3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ACO2_Project3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FEE954415FF8A5D000FD9CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1FEE954615FF8A5D000FD9CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -92,6 +94,7 @@
 		1FEE954A15FF8A5D000FD9CA /* ACO2_Project3 */ = {
 			isa = PBXGroup;
 			children = (
+				1FB2CE8E160B8E8E0026BAD0 /* erase.png */,
 				1FEE95881600F9ED000FD9CA /* save2.png */,
 				1FEE95861600F993000FD9CA /* closed.png */,
 				1FEE957E1600F02E000FD9CA /* addevent.png */,
@@ -180,6 +183,7 @@
 				1FEE957F1600F02E000FD9CA /* addevent.png in Resources */,
 				1FEE95871600F993000FD9CA /* closed.png in Resources */,
 				1FEE95891600F9ED000FD9CA /* save2.png in Resources */,
+				1FB2CE8F160B8E8E0026BAD0 /* erase.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
