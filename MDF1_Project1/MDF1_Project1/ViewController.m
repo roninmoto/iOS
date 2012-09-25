@@ -16,6 +16,11 @@
 
 @implementation ViewController
 
+-(IBAction)onButtonClick:(id)sender
+{
+    
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
