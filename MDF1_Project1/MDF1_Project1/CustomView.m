@@ -1,14 +1,14 @@
 //
-//  CustomCell.m
+//  CustomView.m
 //  MDF1_Project1
 //
-//  Created by Joel Betterly on 9/25/12.
+//  Created by Joel Betterly on 9/26/12.
 //  Copyright (c) 2012 Joel Betterly. All rights reserved.
 //
 
-#import "CustomCell.h"
+#import "CustomView.h"
 
-@implementation CustomCell
+@implementation CustomView
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
