@@ -7,12 +7,16 @@
 //
 
 #import "secondView.h"
+#import "TableViewController.h"
+#import "ViewController.h"
 
 @interface secondView ()
 
 @end
 
 @implementation secondView
+@synthesize stores;
+@synthesize textSelected;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -23,10 +27,25 @@
     return self;
 }
 
+- (id) initWithTextSelected:(NSString *)text
+{
+    self.textSelected = text;
+    [stores setText:[self textSelected]];
+    return self;
+}
+
 - (void)viewDidLoad
 {
+    [stores setText:[self textSelected]];
+    self.title = @"ASolution";
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+}
+
+- (IBAction)closeButton:(id)sender
+{
+    //had to use new dismiss because dismissModalViewController has been outdated.
+    [self dismissViewControllerAnimated:TRUE completion:nil];
 }
 
 - (void)didReceiveMemoryWarning

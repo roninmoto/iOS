@@ -12,6 +12,7 @@
 {
 }
 
+//my button to load second view
 -(IBAction)onButtonClick:(id)sender;
 
 

@@ -9,5 +9,13 @@
 #import <UIKit/UIKit.h>
 
 @interface CustomView : UITableViewCell
+{
+    IBOutlet UILabel *textLabel;
+    IBOutlet UILabel *storeLabel;
+}
+
+@property (strong, nonatomic)IBOutlet UILabel *textLabel;
+@property (strong, nonatomic)IBOutlet UILabel *storeLabel;
+
 
 @end

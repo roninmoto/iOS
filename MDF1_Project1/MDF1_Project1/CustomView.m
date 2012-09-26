@@ -9,6 +9,8 @@
 #import "CustomView.h"
 
 @implementation CustomView
+@synthesize textLabel;
+@synthesize storeLabel;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

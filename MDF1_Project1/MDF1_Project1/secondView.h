@@ -9,5 +9,16 @@
 #import <UIKit/UIKit.h>
 
 @interface secondView : UIViewController
+{
+    IBOutlet UITextView *stores;
+    NSString *textSelected;
+}
+
+-(IBAction)closeButton:(id)sender;
+
+@property (nonatomic, retain) IBOutlet UITextView *stores;
+@property (nonatomic, retain) NSString *textSelected;
+
+-(id)initWithTextSelected:(NSString *)text;
 
 @end
