@@ -24,6 +24,8 @@
 @synthesize secondViewController;
 
 
+
+//turns Edit button on and off
 -(IBAction)editButton:(id)sender
 {
     if (theTableView.editing == NO)
@@ -201,6 +203,8 @@
             }
         }
     }
+    
+    //places the two strings on the cell
     cell.textLabel.text = (NSString*)[array objectAtIndex:indexPath.row];
     cell.storeLabel.text = (NSString*)[arrayTwo objectAtIndex:indexPath.row];
     

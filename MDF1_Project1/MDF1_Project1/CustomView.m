@@ -12,6 +12,9 @@
 @synthesize textLabel;
 @synthesize storeLabel;
 
+
+//Move along, these are not the droids you are looking for.
+
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
